@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Create product objects using object literals
+    let product1 = {};
+    let product2 = {};
+    let product3 = {};
+
+    // Function to get product details from user
+    function getProductDetails(product, productNumber) {
+      product.id = prompt(`Enter ID for Product ${productNumber}:`);
+      product.name = prompt(`Enter Name for Product ${productNumber}:`);
+      product.price = parseFloat(prompt(`Enter Price for Product ${productNumber}:`));
+      product.quantity = parseInt(prompt(`Enter Quantity for Product ${productNumber}:`));
+    }
+
+    // Get input from user
+    getProductDetails(product1, 1);
+    getProductDetails(product2, 2);
+    getProductDetails(product3, 3);
+
+    // Display product details
+    console.log("Product Details:");
+    console.log(product1);
+    console.log(product2);
+    console.log(product3);
+
+  </script>
+</body>
+
+</html>

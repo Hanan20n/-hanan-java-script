@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Constructor function
+    function Course(code, title, creditHours) {
+      this.code = code;
+      this.title = title;
+      this.creditHours = creditHours;
+    }
+
+    // Ask user for course information and create objects
+    let course1 = new Course(
+      prompt("Enter Course 1 Code:"),
+      prompt("Enter Course 1 Title:"),
+      parseInt(prompt("Enter Course 1 Credit Hours:"))
+    );
+
+    let course2 = new Course(
+      prompt("Enter Course 2 Code:"),
+      prompt("Enter Course 2 Title:"),
+      parseInt(prompt("Enter Course 2 Credit Hours:"))
+    );
+
+    let course3 = new Course(
+      prompt("Enter Course 3 Code:"),
+      prompt("Enter Course 3 Title:"),
+      parseInt(prompt("Enter Course 3 Credit Hours:"))
+    );
+
+    // Display course information
+    console.log("Course Information:");
+    console.log(course1);
+    console.log(course2);
+    console.log(course3);
+
+  </script>
+</body>
+
+</html>
