@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Playground</title>
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4a00e0, #8e2de2);
+      padding: 30px;
+      text-align: center;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 22px;
+      color: #4a00e0;
+    }
+
+    .info {
+      padding: 6px;
+      background: #e7ddff;
+      border-radius: 6px;
+      margin: 5px 0;
+    }
+
+    ul li {
+      background: #e3f2fd;
+      padding: 6px 10px;
+      margin: 5px 0;
+      border-radius: 6px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #4a00e0;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #6200ff;
+    }
+
+    #output {
+      min-height: 100px;
+      background: #f8f5ff;
+      border-left: 4px solid #8e2de2;
+    }
+
+    .highlight {
+      background: yellow !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 id="mainTitle">DOM Practice Playground</h1>
+    <p>Use JavaScript to modify, select, create, delete, and control the DOM.</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Section 1 -->
+    <div id="section1" class="card">
+      <h2>Section 1 – Paragraphs</h2>
+      <p id="p1">Paragraph One</p>
+      <p class="info">Info Text A</p>
+      <p class="info">Info Text B</p>
+    </div>
+
+    <!-- Section 2 -->
+    <div id="section2" class="card">
+      <h2>Section 2 – Link</h2>
+      <a id="myLink" href="https://google.com">Google Link</a>
+    </div>
+
+    <!-- Section 3 -->
+    <div id="section3" class="card">
+      <h2>Section 3 – List Items</h2>
+      <ul id="myList">
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+      </ul>
+    </div>
+
+    <!-- Section 4 -->
+    <div id="section4" class="card">
+      <h2>Section 4 – Button</h2>
+      <button id="btn">Click Me</button>
+      <p id="btnMsg">Message will appear here.</p>
+    </div>
+
+    <!-- Output Section -->
+    <div id="output" class="card">
+      <h2>Output Console</h2>
+      <p>Use this area to display results using JS.</p>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
